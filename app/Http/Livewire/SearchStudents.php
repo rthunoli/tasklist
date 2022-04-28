@@ -14,7 +14,8 @@ class SearchStudents extends LivewireDatatable
     public function builder(){
         $query = Student::from('student as a')
                 ->join('guardian as b','a.parent_id','b.id')
-                ->join('app_db.student_status as c','a.status','c.id');
+                ->join('app_db.student_status as c','a.status','c.id')
+                ->join('batch as d','a.class_id','d.id');
                 // ->select('a.admission_no','a.full_name','a.gender','a.phone_no','a.phone_home',
                 //     'a.admission_date','a.admitted_class','a.second_language','b.father_name',
                 //     'b.father_occupation','b.phone_father','b.father_residential_address',
@@ -54,7 +55,11 @@ class SearchStudents extends LivewireDatatable
             Column::name('a.full_name')
                 ->label('Full Name')
                 ->searchable(),
-   
+            
+            Column::name('d.batch_name')
+                ->label('Current Batch')
+                ->filterable(),
+            
             Column::name('c.status')
                 ->label('Status')
                 ->filterable($this->StudentStatus),
