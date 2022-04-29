@@ -20,4 +20,4 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 node_modules
-jspm4-4.0.22.125-amd64.deb
+*.deb
