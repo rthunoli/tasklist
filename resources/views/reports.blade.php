@@ -13,7 +13,7 @@
                     <div class="flex justify-between items-center">
                         <div class="flex-auto p-2 border-2 h-screen">
                             <div class="mb-2 p-2 text-blue-600 font-semibold text-center shadow-md">Fee Reports</div>
-                            <a href="#" class="block capitalize text-blue-500 hover:font-semibold">fee unpaid list</a>
+                            <a href="{{ route('fee_paid') }}" class="block capitalize text-blue-500 hover:font-semibold">fee paid report</a>
                             <a href="{{ route('fee_paid_headwise') }}" class="block capitalize text-blue-500 hover:font-semibold">fee paid headwise report</a>
                         </div>
                         <div class="flex-auto p-2 border-2 h-screen">

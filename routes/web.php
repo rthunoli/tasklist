@@ -63,6 +63,9 @@ Route::get('/transport_defaulters',[ReportController::class,'transport_defaulter
 Route::get('/transport_paid',[ReportController::class,'transport_paid'])
     ->middleware(['auth','dbok'])->name('transport_paid');
 
+Route::get('/fee_paid',[ReportController::class,'fee_paid'])
+    ->middleware(['auth','dbok'])->name('fee_paid');
+
 Route::get('/fee_paid_headwise',[ReportController::class,'fee_paid_headwise'])
     ->middleware(['auth','dbok'])->name('fee_paid_headwise');
 

@@ -34,6 +34,13 @@ class ReportController extends Controller
         return view('livewire.transport-paid');
     }
 
+    public function fee_paid()
+    {
+        // dd('Fee Paid Report');
+        self::date_validate(route("fee_paid"));
+        return view('livewire.fee-paid');
+    }
+
     public function fee_paid_headwise()
     {
         self::date_validate(route("fee_paid_headwise"));
