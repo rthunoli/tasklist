@@ -1,12 +1,10 @@
 <?php
+
+use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\LivewireController;
 use App\Http\Controllers\PrintController;
 use App\Http\Controllers\QueryController;
-use Illuminate\Http\Request;
-// use App\Http\Controllers\PaginationController;
-// use App\Http\Controllers\SearchController;
-// use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -51,7 +49,6 @@ Route::get('/session', function () {
 
 // Route::get('/paginate', [PaginationController::class, 'index']);
 
-// Route::get('/old-search', [SearchController::class, 'index'])->middleware('auth')->name('old-search');
 
 Route::get('/livewire-test',[LivewireController::class,'test'])->name('livewire-test');
 
@@ -78,3 +75,6 @@ Route::get('/query-test', [QueryController::class,'index'])
 require __DIR__ . '/auth.php';
 
 // Route::resource('tasks', TaskController::class)->middleware('auth');
+
+Route::resource('activities',ActivityController::class)->middleware('auth');
+

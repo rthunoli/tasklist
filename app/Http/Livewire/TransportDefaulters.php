@@ -11,6 +11,7 @@ use Mediconesystems\LivewireDatatables\Http\Livewire\LivewireDatatable;
 
 class TransportDefaulters extends LivewireDatatable
 {
+    // public $complex = true;
     private static function genQuery()
     {
         /*

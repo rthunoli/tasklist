@@ -10,7 +10,7 @@
     </x-slot>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-white overflow-hidden shadow-sm rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
                     <div class="font-sans text-gray-600">
                         <ul class="flex flex-col m-auto w-9/12 text-sm font-medium text-gray-900 bg-white overflow-hidden rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white">

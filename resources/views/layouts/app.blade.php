@@ -68,17 +68,6 @@
                     <a href="{{ route('search') }}">Search Stuents</a>
                 </button>
 
-                {{-- <div class="mt-4">
-                    <form action="{{ route('search') }}" method="get">
-                        <input type="hidden" name="table" value="student">
-                        <input type="text" id="search" name="search" class="bg-gray-50 border 
-                            border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 
-                            focus:border-blue-500 block p-2.5 dark:bg-gray-700 
-                            dark:border-gray-600 dark:placeholder-gray-400 dark:text-white 
-                            dark:focus:ring-blue-500 dark:focus:border-blue-500 w-11/12" 
-                            placeholder="Search students" />
-                    </form>
-                </div> --}}
             </aside>
             
             <!-- Page Content -->

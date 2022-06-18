@@ -11,6 +11,8 @@ use Mediconesystems\LivewireDatatables\NumberColumn;
 
 class FeePaid extends LivewireDatatable
 {
+    // public $complex = true;
+    
     private static function genQuery()
     {
 /*
@@ -188,10 +190,15 @@ order by 1
                 ->filterable(),
             
             NumberColumn::name('x.amount')
-                ->label('Amount'),
+                ->label('Amount')
+                ->enableSummary(),
+
+            // NumberColumn::name('students.age:sum')->label('Student Sum'),
             
             NumberColumn::name('x.discount')
-                ->label('Discount'),
+                ->label('Discount')
+                ->enableSummary(),
+                
 
             Column::name('x.fee_type')
                 ->label('Fee Type')

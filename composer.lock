@@ -2094,16 +2094,16 @@
         },
         {
             "name": "mediconesystems/livewire-datatables",
-            "version": "v0.9.1",
+            "version": "v0.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MedicOneSystems/livewire-datatables.git",
-                "reference": "a9286211158c25f1cc8e0a4eada66e9774305c03"
+                "reference": "141b6fd0a21937bf56e54eac2ff090def6ce793a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MedicOneSystems/livewire-datatables/zipball/a9286211158c25f1cc8e0a4eada66e9774305c03",
-                "reference": "a9286211158c25f1cc8e0a4eada66e9774305c03",
+                "url": "https://api.github.com/repos/MedicOneSystems/livewire-datatables/zipball/141b6fd0a21937bf56e54eac2ff090def6ce793a",
+                "reference": "141b6fd0a21937bf56e54eac2ff090def6ce793a",
                 "shasum": ""
             },
             "require": {
@@ -2151,9 +2151,9 @@
             ],
             "support": {
                 "issues": "https://github.com/MedicOneSystems/livewire-datatables/issues",
-                "source": "https://github.com/MedicOneSystems/livewire-datatables/tree/v0.9.1"
+                "source": "https://github.com/MedicOneSystems/livewire-datatables/tree/v0.9.4"
             },
-            "time": "2022-03-22T15:28:24+00:00"
+            "time": "2022-04-04T13:57:02+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -8612,5 +8612,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
